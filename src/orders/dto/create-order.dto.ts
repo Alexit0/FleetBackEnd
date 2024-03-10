@@ -29,7 +29,7 @@ export class LoadingDetails {
 
 export class CreateOrderDto {
   @IsNotEmpty()
-  readonly truckNumber: string;
+  readonly truckNumber: string; 
   @IsNotEmpty()
   readonly order: LoadingDetails;
 }

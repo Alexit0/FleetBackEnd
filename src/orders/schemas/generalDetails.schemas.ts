@@ -1,7 +1,6 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
- 
 
-@Schema({_id: false})
+@Schema({ _id: false })
 export class GeneralDetails {
   @Prop()
   date: string;
@@ -23,6 +22,8 @@ export class GeneralDetails {
   cargoDetails: string;
   @Prop()
   comments: string;
+  @Prop()
+  type: string;
 }
 
 export const GeneralDetailsSchema =

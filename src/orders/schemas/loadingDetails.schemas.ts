@@ -1,11 +1,12 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { GeneralDetails, GeneralDetailsSchema } from './generalDetails.schemas';
 
-
 @Schema({ _id: false })
 export class LoadingDetails {
   @Prop()
-  date: string;
+  index: number
+  @Prop()
+  dateTime: string;
   @Prop()
   timeFrom: string;
   @Prop()
@@ -24,8 +25,10 @@ export class LoadingDetails {
   cargoDetails: string;
   @Prop()
   comments: string;
-  @Prop({ type: [GeneralDetailsSchema], default: [] })
-  unloadingPlace: [GeneralDetails];
+  @Prop()
+  type: string;
+  // @Prop({ type: [GeneralDetailsSchema], default: [] })
+  // unloadingPlace: [GeneralDetails];
 }
 
 export const LoadingDetailsSchema =
