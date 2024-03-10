@@ -30,11 +30,11 @@ $ npm install
 ## Running the app
 
 1. Follow all the steps on [MongoDB Website](https://account.mongodb.com/) to create/connect your database.
-2. Create .env file in the main folder containing the variable storing your connection string:
-  ```
-  ATLAS_CONNECT = 'your connection string'
-  ```
-3. Run the app:
+2. Create .env file in the main folder containing the string 
+```
+ATLAS_CONNECT = ''
+```
+
 ```bash
 # development
 $ npm run start
